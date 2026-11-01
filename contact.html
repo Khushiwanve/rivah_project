@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | Rivah Studios</title>
+<meta name="description" content="Book a call or send a message to Rivah Studios. Replies within 24 hours.">
+<meta name="theme-color" content="#EFE6D4">
+<link rel="canonical" href="https://rivahstudios.in/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rivah Studios">
+<meta property="og:title" content="Contact | Rivah Studios">
+<meta property="og:description" content="Book a call or send a message to Rivah Studios. Replies within 24 hours.">
+<meta property="og:url" content="https://rivahstudios.in/contact.html">
+<meta property="og:image" content="https://rivahstudios.in/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="assets/logo/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/effects.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<noscript><style>.rv{opacity:1;transform:none;filter:none}#ld{display:none}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="c" aria-hidden="true"></canvas><div id="cur"></div>
+<div id="app">
+<nav id="nav"><a class="logo" href="index.html" aria-label="Rivah Studios home"><img class="lg-mark" src="assets/logo/logo-mark.png" alt="" width="462" height="462"><img class="lg-word" src="assets/logo/logo-wordmark.png" alt="Rivah Studios" width="1230" height="90"></a>
+<div class="links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">Founder</a><a href="contact.html" aria-current="page">Contact</a></div>
+<div class="nr"><a class="btn nc" data-wa="call" href="https://wa.me/917972096750?text=Hi%20Rivah%20Studios%2C%20I%20would%20like%20to%20book%20a%20call." target="_blank" rel="noopener">Book A Call</a><button class="bg" id="bg" aria-label="Menu" aria-expanded="false">☰</button></div></nav>
+<main id="main">
+<section class="panel page-head rv"><span class="tag">Contact</span><h1>Let’s build <em>something</em> together</h1><p>Tell us about your project. We reply within 24 hours.</p></section>
+
+<section id="contact" class="panel rv"><span class="tag">Contact</span><h2>Send a <em>message</em></h2>
+<form id="f" novalidate>
+<label class="hp" aria-hidden="true">Company<input name="company" tabindex="-1" autocomplete="off"></label>
+<input name="name" placeholder="Name" aria-label="Name" autocomplete="name" required>
+<input name="email" type="email" placeholder="Email (optional)" aria-label="Email (optional)" autocomplete="email">
+<input name="phone" type="tel" placeholder="Phone" aria-label="Phone" autocomplete="tel">
+<select name="service" aria-label="Service" id="sel"></select>
+<select name="budget" class="full" aria-label="Budget"><option value="">Budget range</option><option>Under ₹25K</option><option>₹25K to ₹1L</option><option>₹1L and above</option></select>
+<textarea name="message" class="full" rows="4" placeholder="Tell us about your project" aria-label="Message"></textarea>
+<div class="full"><button class="btn" type="submit">Send on WhatsApp</button><span id="ok" role="status" aria-live="polite"></span></div>
+<p class="full note">Sending opens WhatsApp with your message ready, so you reach us directly.</p></form>
+<div class="info"><a href="https://wa.me/917972096750" target="_blank" rel="noopener">WhatsApp: +91 79720 96750</a><a href="mailto:rivahstudio@gmail.com">Email: rivahstudio@gmail.com</a><a href="https://www.instagram.com/rivahstudios.in" target="_blank" rel="noopener">Instagram: @rivahstudios.in</a></div></section>
+
+<section id="faq" class="panel rv"><span class="tag">FAQ</span><h2>Questions, <em>answered</em></h2><div class="pills" id="faq-pills"></div><div id="faq-list"></div></section>
+</main>
+<footer><div><a class="logo" href="index.html" aria-label="Rivah Studios home"><img src="assets/logo/logo-lockup-reversed.png" alt="Rivah Studios" width="1230" height="648"></a><p>Where creativity flows.</p><small>© <span id="yr">2026</span> Rivah Studios. All rights reserved.</small></div>
+<div><p class="ft-t">Pages</p><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">Founder</a><a href="contact.html">Contact</a></div>
+<div><p class="ft-t">Say hello</p><a href="https://wa.me/917972096750" target="_blank" rel="noopener">WhatsApp +91 79720 96750</a><a href="https://www.instagram.com/rivahstudios.in" target="_blank" rel="noopener">Instagram</a><a href="mailto:rivahstudio@gmail.com">rivahstudio@gmail.com</a></div></footer>
+<a class="wa" id="wa" data-wa="chat" href="https://wa.me/917972096750?text=Hi%20Rivah%20Studios%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+</div>
+
+<script src="js/core/config.js" defer></script>
+<script src="js/core/data.js" defer></script>
+<script src="js/core/utils.js" defer></script>
+<script src="js/river/river-shader.js" defer></script>
+<script src="js/components/contact-form.js" defer></script>
+<script src="js/components/faq.js" defer></script>
+<script src="js/components/nav.js" defer></script>
+<script src="js/components/whatsapp.js" defer></script>
+<script src="js/components/effects.js" defer></script>
+<script src="js/components/reveal.js" defer></script>
+<script src="js/river/river.js" defer></script>
+</body>
+</html>

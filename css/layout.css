@@ -1,0 +1,27 @@
+/* layout.css: Page frame: navbar, panels, marquee, footer, floating WhatsApp button. */
+nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:.9rem 5vw;transition:.3s}
+nav.s{background:rgba(239,230,212,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+.logo img{display:block;width:auto}
+.lg-mark{height:44px}
+.lg-word{height:12px}
+.nr{display:flex;align-items:center;gap:.6rem}
+.bg{display:none;background:transparent;border:1px solid var(--ink);border-radius:50%;width:42px;height:42px;font-size:1.1rem;cursor:pointer;color:var(--ink)}
+.links{display:flex;gap:1.6rem}
+.links a{color:var(--ink);text-decoration:none;font:500 .74rem var(--font-display);letter-spacing:.18em;text-transform:uppercase;position:relative}
+.links a:after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:0;background:var(--terra);transition:.3s}
+.links a:hover:after{width:100%}
+.panel{max-width:1000px;margin:0 auto 110px;background:rgba(239,230,212,.93);border:1px solid var(--line);border-radius:24px;padding:clamp(1.4rem,4vw,3rem);box-shadow:0 20px 50px rgba(59,42,32,.09);width:calc(100% - 8vw)}
+.mq{overflow:hidden;border-block:1px solid var(--ink);padding:.9rem 0;margin:0 0 110px;background:rgba(239,230,212,.9)}
+.mq div{display:flex;gap:3rem;width:max-content;animation:mq 30s linear infinite;font:500 1.05rem var(--font-display);letter-spacing:.22em;text-transform:uppercase}
+.mq span:nth-child(even){color:var(--terra)}
+@keyframes mq{to{transform:translateX(-50%)}}
+footer{background:var(--umber);color:var(--cream);padding:3.5rem 5vw 2.5rem;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2.5rem}
+footer a{display:block;color:var(--cream);text-decoration:none;margin:0 0 .55rem;opacity:.85}
+footer a:hover{color:var(--sand);opacity:1}
+footer .logo{display:inline-block;margin:0;opacity:1}
+footer .logo img{width:clamp(150px,16vw,190px);height:auto}
+footer p{margin:.9rem 0 .4rem;color:rgba(239,230,212,.8)}
+footer .ft-t{font:500 .72rem var(--font-display);letter-spacing:.24em;text-transform:uppercase;color:var(--sand);margin:0 0 1.1rem}
+footer small{color:rgba(239,230,212,.6)}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--terra-d);color:var(--cream);border-radius:999px;padding:.8rem 1.2rem;text-decoration:none;font-weight:500;box-shadow:0 10px 25px rgba(59,42,32,.35)}

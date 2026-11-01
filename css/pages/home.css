@@ -1,0 +1,35 @@
+/* pages/home.css: hero, floating cards, results dashboard */
+.hero{margin-top:7vh;display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+.hero h1{margin-bottom:1.1rem}
+.hero p{color:var(--ink2);font-size:1.1rem;max-width:30rem}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap;margin:1.6rem 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;border-top:1px solid var(--ink);padding-top:1rem}
+.stats b{font:500 1.7rem var(--font-display);color:var(--terra-d);display:block}
+.stats span{font-size:.8rem;color:var(--ink2)}
+.fl{position:relative;min-height:300px}
+.fl .card{position:absolute;animation:fy 6s ease-in-out infinite}
+.c1{top:0;left:6%;width:62%}
+.c2{top:42%;right:0;width:58%;animation-delay:-2s}
+.c3{bottom:0;left:0;width:50%;animation-delay:-4s}
+.fl b{font:500 1.5rem var(--font-display);color:var(--terra-d)}
+.fl small{display:block;color:var(--ink2)}
+.bars{display:flex;gap:5px;align-items:flex-end;height:46px;margin-top:.5rem}
+.bars i{flex:1;background:var(--terra);border-radius:4px 4px 0 0;opacity:.8}
+@keyframes fy{50%{transform:translateY(-12px)}}
+.rg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.rc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.4rem}
+.rc b{display:block;font:500 clamp(2.2rem,5vw,3.2rem)/1 var(--font-display);color:var(--terra-d)}
+.rc span{display:block;margin:.4rem 0 1rem;color:var(--ink2)}
+.pb{display:block;height:4px;border-radius:4px;background:var(--line);overflow:hidden}
+.pb:after{content:"";display:block;height:100%;width:0;background:var(--terra);transition:width 1.6s .3s ease}
+.in .pb:after{width:var(--w)}
+.fl .c1{background:var(--umber);border-color:transparent}
+.fl .c1 b{color:var(--cream)}
+.fl .c1 small{color:rgba(239,230,212,.78)}
+.fl .c1 .bars i{background:var(--sand)}
+.fl .c2{background:var(--terra-d);border-color:transparent}
+.fl .c2 b,.fl .c2 small{color:var(--cream)}
+.fl .c3{background:var(--sand);border-color:transparent}
+.fl .c3 b{color:var(--ink)}
+.fl .c2{width:52%}
+.fl .c3{width:44%}

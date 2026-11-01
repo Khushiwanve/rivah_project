@@ -1,0 +1,9 @@
+/* pages/services.css: process timeline */
+.pr{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem;padding-top:1.4rem}
+.pr:before,.pr:after{content:"";position:absolute;top:0;left:0;height:3px;border-radius:3px}
+.pr:before{width:100%;background:var(--line)}
+.pr:after{width:var(--pg,0%);background:var(--terra);transition:width 1s ease}
+.pr div{cursor:pointer}
+.pr b{font:500 1.4rem var(--font-display);color:var(--terra-d)}
+.pr h3{font-size:1rem}
+.pr p{font-size:.85rem;color:var(--ink2);margin:.2rem 0 0}

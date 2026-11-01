@@ -1,0 +1,20 @@
+/* base.css: brand tokens (from the Rivah Studios Brand Identity Kit), reset and typography. Change colors and fonts here only. */
+:root{--cream:#EFE6D4;--ink:#161312;--sand:#D9C7A5;--terra:#B5573A;--sage:#7A8266;--umber:#3B2A20;
+--terra-d:#A24C31;--card:#E7DBC4;--ink2:rgba(22,19,18,.76);--line:rgba(22,19,18,.12);--soft:rgba(181,87,58,.10);
+--font-display:Rubik,system-ui,sans-serif;--font-body:"DM Sans",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--cream:#EFE6D4;--ink:#161312}}
+:root[data-theme="dark"]{--cream:#EFE6D4;--ink:#161312}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--font-body);overflow-x:hidden;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+h1,h2,h3{font-family:var(--font-display);font-weight:500;margin:0;line-height:1.12;text-transform:uppercase;letter-spacing:.08em;color:var(--ink)}
+h1{font-size:clamp(1.8rem,4.4vw,3.2rem)}
+h2{font-size:clamp(1.5rem,3.4vw,2.3rem);margin-bottom:1.4rem}
+h3{font-size:1rem;letter-spacing:.06em}
+h1 em,h2 em{font-style:normal;color:var(--terra-d)}
+canvas{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block}
+#app{position:relative;z-index:1}
+.tag{display:inline-block;font:500 .72rem var(--font-display);letter-spacing:.24em;text-transform:uppercase;color:var(--ink);margin-bottom:1.1rem}
+.tag:before{content:"";display:inline-block;width:26px;height:2px;background:var(--terra);vertical-align:middle;margin-right:.7rem}
